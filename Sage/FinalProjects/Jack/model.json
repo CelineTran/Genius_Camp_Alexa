@@ -1,0 +1,175 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "fortnite loot",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": [
+                        "cancel",
+                        "exit"
+                    ]
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "LocationIntent",
+                    "slots": [
+                        {
+                            "name": "landChoice",
+                            "type": "Locations"
+                        }
+                    ],
+                    "samples": [
+                        "Let's land at {landChoice}"
+                    ]
+                },
+                {
+                    "name": "LootIntent",
+                    "slots": [
+                        {
+                            "name": "buildingChoice",
+                            "type": "AMAZON.Color"
+                        }
+                    ],
+                    "samples": [
+                        "{buildingChoice}"
+                    ]
+                },
+                {
+                    "name": "QIntent",
+                    "slots": [
+                        {
+                            "name": "yes",
+                            "type": "AMAZON.Color"
+                        },
+                        {
+                            "name": "no",
+                            "type": "AMAZON.Color"
+                        }
+                    ],
+                    "samples": [
+                        "{no} i wouldn't",
+                        "{yes} i would"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "Locations",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "salty springs"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "lonely lodge"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "pressure plant"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "frosty flights"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "paradise palms"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sunny steps"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "mega mall"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dusty divot"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "happy hamlet"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "polar peak"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "shifty shafts"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "neo tilted"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "snobby shores"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "loot lake"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "lazy lagoon"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "the block"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "haunted hills"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "pleasant park"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "junk junction"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
