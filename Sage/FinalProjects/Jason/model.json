@@ -1,0 +1,77 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "price guessing",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "GetGuessIntent",
+                    "slots": [
+                        {
+                            "name": "Guess",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "My guess is {Guess}",
+                        "I guess {Guess}"
+                    ]
+                },
+                {
+                    "name": "PlayerOneNameIntent",
+                    "slots": [
+                        {
+                            "name": "PlayerOneName",
+                            "type": "AMAZON.FirstName"
+                        }
+                    ],
+                    "samples": [
+                        "player one's name is {PlayerOneName}"
+                    ]
+                },
+                {
+                    "name": "PlayerTwoNameIntent",
+                    "slots": [
+                        {
+                            "name": "PlayerTwoName",
+                            "type": "AMAZON.FirstName"
+                        }
+                    ],
+                    "samples": [
+                        "the second players name is {PlayerTwoName}"
+                    ]
+                },
+                {
+                    "name": "QuestionIntent",
+                    "slots": [],
+                    "samples": []
+                },
+                {
+                    "name": "DisplayScoresIntent",
+                    "slots": [],
+                    "samples": []
+                }
+            ],
+            "types": []
+        }
+    }
+}
