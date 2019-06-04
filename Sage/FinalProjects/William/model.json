@@ -1,0 +1,351 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "minigame",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": [
+                        "directions",
+                        "help"
+                    ]
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "Explore",
+                    "slots": [],
+                    "samples": [
+                        "adventure",
+                        "explore"
+                    ]
+                },
+                {
+                    "name": "MonsterScenario",
+                    "slots": [
+                        {
+                            "name": "attack",
+                            "type": "optionAttack"
+                        },
+                        {
+                            "name": "escape",
+                            "type": "optionEscape"
+                        }
+                    ],
+                    "samples": [
+                        "{escape}",
+                        "{attack}"
+                    ]
+                },
+                {
+                    "name": "ChestScenario",
+                    "slots": [
+                        {
+                            "name": "yes",
+                            "type": "optionYes"
+                        },
+                        {
+                            "name": "no",
+                            "type": "optionNo"
+                        }
+                    ],
+                    "samples": [
+                        "{no}",
+                        "{yes}"
+                    ]
+                },
+                {
+                    "name": "Upgrade",
+                    "slots": [],
+                    "samples": [
+                        "upgrade skills",
+                        "level up",
+                        "upgrade stat",
+                        "upgrade stats",
+                        "upgrade"
+                    ]
+                },
+                {
+                    "name": "UpgradeStats",
+                    "slots": [
+                        {
+                            "name": "hp",
+                            "type": "HP"
+                        },
+                        {
+                            "name": "defense",
+                            "type": "DEF"
+                        },
+                        {
+                            "name": "expAmount",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "attackStat",
+                            "type": "ATT"
+                        }
+                    ],
+                    "samples": [
+                        "upgrade {attackStat} with {expAmount} points",
+                        "upgrade {attackStat} with {expAmount} point",
+                        "increase {attackStat} with {expAmount} points",
+                        "increase {attackStat} with {expAmount} point",
+                        "use {expAmount} point on {attackStat}",
+                        "use {expAmount} point for {attackStat}",
+                        "use {expAmount} points on {attackStat}",
+                        "use {expAmount} points for {attackStat}",
+                        "Increase {hp} with {defense} points",
+                        "Increase {hp} with {defense} point",
+                        "Increase {hp} with {expAmount} points",
+                        "Increase {hp} with {expAmount} point",
+                        "use {expAmount} point for {defense}",
+                        "use {expAmount} points for {defense}",
+                        "use {expAmount} point for {hp}",
+                        "use {expAmount} points for {hp}",
+                        "use {expAmount} point on {defense}",
+                        "use {expAmount} points on {defense}",
+                        "use {expAmount} point on {hp}",
+                        "use {expAmount} points on {hp}",
+                        "upgrade {hp} with {expAmount} point",
+                        "upgrade {defense} with {expAmount} point",
+                        "upgrade {defense} with {expAmount} points",
+                        "upgrade {hp} with {expAmount} points"
+                    ]
+                },
+                {
+                    "name": "CheckProfile",
+                    "slots": [],
+                    "samples": [
+                        "profile",
+                        "check stats",
+                        "check my stats",
+                        "check my profile",
+                        "check profile"
+                    ]
+                },
+                {
+                    "name": "BossScenario",
+                    "slots": [],
+                    "samples": [
+                        "enter the dragon's lair",
+                        "enter the lair",
+                        "enter"
+                    ]
+                },
+                {
+                    "name": "BossFight",
+                    "slots": [
+                        {
+                            "name": "attackBoss",
+                            "type": "attackBoss"
+                        },
+                        {
+                            "name": "findWeakness",
+                            "type": "findWeakness"
+                        }
+                    ],
+                    "samples": [
+                        "{findWeakness}",
+                        "{attackBoss}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "optionAttack",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "fight"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "attack"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "optionEscape",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "run away"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "run"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "escape"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "HP",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "hitpoints"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hitpoint"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "HP"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "health"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "DEF",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "def"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "defense"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "optionYes",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "yeah"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sure"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "okay"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "OK"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "yes"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "optionNo",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "don't"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "nope"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "no"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "attackBoss",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "attack the boss"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "attack the dragon"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "attack dragon"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "attack boss"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "findWeakness",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "find its weakness"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "find weakness"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "find"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "ATT",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "attack"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
