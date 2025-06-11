@@ -1,0 +1,55 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "sound skill",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "catIntent",
+                    "slots": [],
+                    "samples": [
+                        "play cat noises",
+                        "cat noises",
+                        "cat",
+                        "play cat sounds"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "DogIntent",
+                    "slots": [],
+                    "samples": [
+                    ]
+                },
+                {
+                    "name": "birdintent",
+                    "slots": [],
+                    "samples": [
+                        "bird",
+                        "bird sounds",
+                        "play bird noises"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
